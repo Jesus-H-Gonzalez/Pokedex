@@ -1,0 +1,337 @@
+.pokeBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+.welcome {
+    background-color: rgba(116, 255, 248, 0.24);
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    width: 200px;
+    height: 600px;
+    position: absolute;
+    transition: 1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+
+/*welcome animation*/
+.pokeBody:hover .welcome {
+    transform:translateX(-125%)
+}
+.moves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 550px;
+    position: absolute;
+    transition: 1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+/*moves animation*/
+.pokeBody:hover .moves {
+    transform:translateX(-125%)
+}
+.welcomebottom {
+    background-color: rgba(116, 255, 248, 0.24);
+    display: flex;
+    justify-content: right;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+    height: 600px;
+    position: absolute;
+    transition: 1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+/*welcome animation*/
+.pokeBody:hover .welcomebottom {
+    transform:translateX(125%);
+}
+.rectanglebig {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+    flex-direction: row;
+}
+.rectanglesmall1 {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    flex-direction: column;
+}
+.rectanglesmall2 {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    flex-direction: column;
+}
+.rectanglesmall3 {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    background-color: chocolate;
+    flex-direction: column;
+}
+.rectanglesmall4 {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    background-color: greenyellow;
+    flex-direction: column;
+}
+.blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blue;
+    justify-content: start;
+    border: rgb(175, 159, 159) 5px solid;
+}
+.red2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    justify-content: start;
+}
+.yellow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: yellow;
+    justify-content: start;
+}
+.green {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    justify-content: start;
+}
+.red {
+    display: flex;
+    align-self: flex-start;
+    background-color: red;
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    transition: 1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+/*red animation*/
+.pokeBody:hover .red {
+    transform:translateX(-100%)
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: hsl(217, 5%, 62%);
+    position: absolute;
+    border: black 15px solid;
+    transition: 1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+    -webkit-transition: opacity 600ms visibility 600ms;
+    transition: opacity 600ms visibility 600ms;
+}
+/*centerbuttom animation*/
+.pokeBody:hover .center {
+    transform:translateY(170%)
+}
+.blacklinetop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    transition:  1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+/*blacklinetop animation*/
+.pokeBody:hover .blacklinetop {
+    transform:translateX(-100%)
+}
+.blacklinebottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    transition:  1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+/*blacklinebuttom animation*/
+.pokeBody:hover .blacklinebottom {
+    transform:translateX(100%)
+}
+.white {
+    display: flex;
+    align-self: flex-end;
+    background-color: white;
+    width: auto;
+    height: auto;
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    transition: 1s cubic-bezier(0.17,-0.77, 0.86, 1.75);
+}
+/*white animation*/
+.pokeBody:hover .white {
+    transform:translateX(100%)
+}
+.pokeContent {
+    background-color: rgba(249, 231, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.pokeContainer {
+
+    display: flex;
+    width: 280px;
+    height: 400px;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid hsl(199, 89%, 63%);
+    border-radius: 20px;
+}
+button {
+    width: 80px;
+    height: 80px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: hsl(217, 5%, 62%);
+}
+
+#tipo {
+    width: 50%;
+}
+
+#tipo2 {
+    width: 50%;
+
+}
+
+#moves0 {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#moves1 {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#moves2 {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#moves3 {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#nombre {
+    font-size: x-large;
+}
+
+#stats0 {
+    font-size: large;
+    width: 15%;
+}
+
+#stats1 {
+    font-size: large;
+    width: 15%;
+}
+
+#stats2 {
+    font-size: large;
+    width: 15%;
+}
+
+#stats3 {
+    font-size: large;
+    width: 15%;
+}
+
+#stats4 {
+    font-size: large;
+    width: 15%;
+}
+
+#stats5 {
+    font-size: large;
+    width: 15%;
+}
+
+#tipo {
+    font-size: large;
+}
+#tipo2 {
+    font-size: large;
+}
+
+#moves0 {
+    font-size: large;
+}
+
+#moves1 {
+    font-size: large;
+}
+
+#moves2 {
+    font-size: large;
+}
+
+#moves3 {
+    font-size: large;
+}
+
+#pokeName {
+    font-size: large;
+}

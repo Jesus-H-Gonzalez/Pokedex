@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+<body>
+<div class="pokeBody">
+<div class="moves">
+    <p>Moves:</p>
+    <input type="text" class="text__type" id="moves0" value="" disabled="true" size="5">
+    <input type="text" class="text__type" id="moves1" value="" disabled="true" size="5">
+    <input type="text" class="text__type" id="moves2" value="" disabled="true" size="5">
+    <input type="text" class="text__type" id="moves3" value="" disabled="true" size="5">
+</div>
+    <div class="welcome">
+        <div class="blue"></div>
+        <div class="red2"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+
+    <div class="welcomebottom" id="lista">
+        <p>Name:</p>
+        <input type="text" class="text__name" id="nombre" value="" disabled="true" size="5" type="text" style="text-transform:uppercase;" value=""  onkeyup="javascript:this.value=this.value.toUpperCase();">
+        <p>Type(s):</p>
+        <input type="text" class="text__type" id="tipo" value="" disabled="true" size="5" width="100px" height="100px" style="text-transform:uppercase;" value=""  onkeyup="javascript:this.value=this.value.toUpperCase();">
+        <input type="text" class="text__type" id="tipo2" value="" disabled="true" size="5" style="text-transform:uppercase;" value=""  onkeyup="javascript:this.value=this.value.toUpperCase();">
+        <p>Stats:</p>
+        <p>HP &nbsp;&nbsp;&nbsp;<input type="text" class="text__type" id="stats0" value="" disabled="true" size="5"></p>
+        <p>Attack &nbsp;&nbsp;&nbsp;<input type="text" class="text__type" id="stats1" value="" disabled="true" size="5"></p>
+        <p>Defense &nbsp;&nbsp;&nbsp;<input type="text" class="text__type" id="stats2" value="" disabled="true" size="5"></p>
+        <p>Sp-attack &nbsp;&nbsp;&nbsp;<input type="text" class="text__type" id="stats3" value="" disabled="true" size="5"></p>
+        <p>Sp-defense &nbsp;&nbsp;&nbsp;<input type="text" class="text__type" id="stats4" value="" disabled="true" size="5"></p>
+        <p>Speed &nbsp;&nbsp;&nbsp;<input type="text" class="text__type" id="stats5" value="" disabled="true" size="5"></p>
+    </div>
+    <div class="red"></div>
+    <div class="blacklinetop"></div>
+    <div  class="pokeContent">
+        <h1>I choose you!!</h1>
+        <input type="text" placeholder="Buscar nombre o # de Id" id="pokeName" name="pokeName" class="input">
+        <br>
+        <br>
+        <br>
+        <div class="pokeContainer">
+        <img src="pokeball.png" id="pokeImg" alt="pokeball" width="280px" height="280px">
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+    <div class="white"></div>
+    <div class="blacklinebottom"></div>
+    <div class="center"><button onclick="fetchPokemon()" id="myBtn"></button></div>
+</div>
+<footer>
+    <script src="pokeex.js"></script></script>    
+</footer>
+</html>
